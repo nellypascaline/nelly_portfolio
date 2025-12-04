@@ -66,7 +66,7 @@ Clone this repository to your desired folder:
 
 sh
   cd my-folder
-  git clone https://github.com/ngnayoufabiola/fabiola_portfolio.git
+  git clone https://github.com/nellypascaline/nelly_pascaline.git
 
 
 ### Install
@@ -102,9 +102,7 @@ sh
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 *ngnayou fabiola*
-
-- GitHub: [ngnayou fabiola](https://github.com/ngnayoufabiola/fabiola_portfolio.git )
+👤 *nellypascaline*](https://github.com/ngnayoufabiola/nelly_pascaline.git )
 -  
 
  FUTURE FEATURES 

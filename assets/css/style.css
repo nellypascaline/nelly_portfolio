@@ -152,4 +152,24 @@ align-items: center;
   border: none;
   font-size: 15px;
 }
+/* contact style*/
+.container{
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  font-weight: 700; 
+}
+.contact_container full name{
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 20px;
+height: 100px ;
+
+}
+.logo{
+  color: #36B37E;
+  text-decoration: none;
+  margin:10px ;
+  font-size: 25px;
+  font-weight: bold;
 }
