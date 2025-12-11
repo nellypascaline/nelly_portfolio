@@ -3,9 +3,6 @@
   padding: 0;
   margin: 0;
 }
-
-/* Define the sreen of mobile devices */
-@media (max-width: 760px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -319,4 +316,126 @@
     padding: 50px 0;
     background-color: #ebf0ee;
   }
+  /*desktop_styling*/
+@media(min-width:1024px){
+  .mobile_menu{
+    display: none;
+  }
+  .desktop_menu{
+    display: flex;
+  }
+  .desktop_menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-decoration: none;
+    list-style: none;
+    text-align: none;
+  }
+  .desktop_menu ul li a{
+    text-decoration: none;
+    font-size: 26px;
+    color: #36b37e;
+    font-weight: 500;
+  }
+  nav{
+    justify-content: left;
+gap: 35%;
+  }
+  .home{
+    background: url(../images/desktop-home-back.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 250px 10px;
+  }
+  .projects{
+    margin-bottom: 30px;
+  }
+ .project_cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ }
+ .about{
+  gap: 40px;
+  margin-top: 40px;
 }
+.about_text{
+  
+background: url(../images/desk-back-mid-left.jpg),url(../images/desk-back-mid-right.jpg);
+      background-repeat: no-repeat,no-repeat;
+      background-position: left bottom,right top;
+      background-size: 160px,160px;
+      padding: 0 25px;
+      gap: 50px;
+    }
+    .about_cards{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+  }
+  .about-text h2{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .about-text p{
+    font-size: 35px;
+  }
+  .contact{
+  flex-direction:row;
+  font-size: 30px;
+  margin-right: 65px;
+  margin-right: 65px;
+  background: url(../images/dek-cont-left.jpg),url(../images/desk-cont-right.jpg);
+  background-repeat :no-repeat,no-repeat;
+  background-position: left bottom,right top;
+  background-size: 160px,160px;
+  padding: 0 25px;
+  gap: 50px;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  grid-template: repeat(2,1fr);
+}
+.contact_text p{
+font-size: 35px;
+  font-weight: 500;
+  padding: 0 35px 135px 90px;
+  justify-content: center;
+  text-align: center;
+  background: url(../images/desk-cont-mid.jpg);
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-right:20px;
+  background-position: bottom center;
+  background-size: 100px 100px;
+}
+.mail{
+  display: none;
+}
+.contact_form form button{
+ background-color: #36b37e;
+ padding: 8px 15px; 
+ color: #fff;
+ border: none;
+ font-size: 25px;
+ border-radius: 5px;
+ margin-bottom: 20px;
+}
+.contact_form form{
+  gap:30px;
+}
+.contact_form form input{
+  width: 400px;
+  padding: 25px 0 20px 25px;
+  border-radius: 20px;
+  border: 1px solid #36b37e;
+  font: 10px;
+}
+.name{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  font-size: 50px;
+}
+
+  }
