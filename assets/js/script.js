@@ -44,3 +44,29 @@ const projects = [
   button:'#'
 },
 ];
+//function to create project cards
+function createProjectCards(project) {
+  const card = document.createElement('div');
+  card.classList.add('project_card');
+  const cardImage=document.createElement('img');
+  cardImage.src = project.image;
+  cardImage.alt = 'project card image';
+  card.appendChild(cardImage);
+  const cardTitle = document.createElement('h3');
+  cardTitle.innerHTML = project.title;
+  card.appendChild(cardTitle);
+  const cardList = document.createElement('ul');
+  project.technologies.forEach(element => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = element;
+    cardList.appendChild(listItem);
+    card.appendChild(cardList);
+    const cardBtn = document.createElement('button');
+    cardBtn.type = 'button';
+    cardBtn.innerHTML = 'see project';
+    card.appendChild(cardBtn);
+    return card;
+
+    
+  });
+}
