@@ -56,17 +56,26 @@ function createProjectCards(project) {
   cardTitle.innerHTML = project.title;
   card.appendChild(cardTitle);
   const cardList = document.createElement('ul');
-  project.technologies.forEach(element => {
+  project.technologies.forEach((element) => {
     const listItem = document.createElement('li');
     listItem.innerHTML = element;
     cardList.appendChild(listItem);
-    card.appendChild(cardList);
-    const cardBtn = document.createElement('button');
-    cardBtn.type = 'button';
-    cardBtn.innerHTML = 'see project';
-    card.appendChild(cardBtn);
-    return card;
+  });
+  card.appendChild(cardList);
+  const cardBtn = document.createElement('button');
+  cardBtn.type = 'button';
+  cardBtn.innerHTML = 'see project';
+  card.appendChild(cardBtn);
+  return card;
+}
 
-    
+//inserting project cards in the projects section
+function insertCards(){
+  const projectsContainer = document.getElementById('project_cards');
+  projects.forEach((project) => {
+    const projectCard = createProjectCards(project);
+    projectsContainer.appendChild(projectCard);
   });
 }
+//event listeners to trigger the insertion of cards into the DOM
+document.addEventListener('DOMContentLoaded',insertCards);
